@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sohil Portfolio</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+
+nav h2 {
+  color: #38bdf8;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 90vh;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 40px;
+}
+
+.hero-text span {
+  color: #38bdf8;
+}
+
+.hero-text p {
+  margin: 15px 0;
+  color: #cbd5e1;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  margin: 10px 10px 0 0;
+  background: #38bdf8;
+  color: black;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #0ea5e9;
+  color: white;
+}
+
+/* Image */
+.hero img {
+  width: 250px;
+  border-radius: 50%;
+  border: 5px solid #38bdf8;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Section */
+section {
+  padding: 50px;
+  text-align: center;
+}
+
+/* Projects */
+.projects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 20px;
+  width: 250px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 15px #38bdf8;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+  <h2>SOHIL</h2>
+  <div>
+    <a href="#">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<div class="hero">
+  
+  <div class="hero-text">
+    <h1>Hi, I'm <span>Sohil 👋</span></h1>
+    <p> web Developer | Student | Tech Lover</p>
+
+    <!-- Resume Button -->
+    <a href="sohil resume.pdf" download class="btn">Download Resume</a>
+
+    <!-- Contact Button -->
+    <a href="#contact" class="btn">Hire Me</a>
+  </div>
+
+  <!-- Profile Image -->
+  <img src="sohil.jpg.jpeg">
+
+</div>
+
+<!-- Projects -->
+<section id="projects">
+  <h2>My Projects 🚀</h2>
+
+  <div class="projects">
+    <div class="card">
+      <h3>Portfolio Website</h3>
+      <p>Modern UI using HTML CSS JS</p>
+    </div>
+
+    <div class="card">
+      <h3>Student System</h3>
+      <p>Java + MySQL project</p>
+    </div>
+
+    <div class="card">
+      <h3>Database Project</h3>
+      <p>SQL based application</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <h2>Contact Me 📧</h2>
+
+  <input type="text" placeholder="Your Name"><br><br>
+  <input type="email" placeholder="Your Email"><br><br>
+  <textarea placeholder="Message"></textarea><br><br>
+
+  <button class="btn">Send</button>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2026 Sohil Portfolio</p>
+</footer>
+
+</body>
+</html>
