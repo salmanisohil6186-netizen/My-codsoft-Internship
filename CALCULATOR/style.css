@@ -1,0 +1,91 @@
+:root {
+  --bg: #0f172a;
+  --card: #1e293b;
+  --btn: #334155;
+  --text: #ffffff;
+  --accent: #38bdf8;
+}
+
+.light {
+  --bg: #f1f5f9;
+  --card: #ffffff;
+  --btn: #e2e8f0;
+  --text: #000;
+  --accent: #0ea5e9;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: var(--bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  width: 320px;
+  background: var(--card);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text);
+}
+
+#display {
+  width: 100%;
+  height: 60px;
+  margin: 15px 0;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 26px;
+  text-align: right;
+  background: var(--btn);
+  color: var(--text);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.btn {
+  height: 55px;
+  border: none;
+  border-radius: 12px;
+  background: var(--btn);
+  color: var(--text);
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.op {
+  color: var(--accent);
+}
+
+.equal {
+  background: var(--accent);
+  color: white;
+}
+
+.zero {
+  grid-column: span 2;
+}
